@@ -39,6 +39,13 @@ namespace Moony.GalacticDocs.Colorful.Checkers
             };
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="open"></param>
+        /// <param name="close"></param>
+        /// <param name="replace"></param>
+        /// <returns></returns>
         public static Func<string, string> Initiate(int open, int close, string replace)
         {
             string open_val = Utils.IntegerToString(open);

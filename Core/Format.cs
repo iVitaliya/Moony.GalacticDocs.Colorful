@@ -1,7 +1,7 @@
 using System;
 using Moony.GalacticDocs.Colorful.Checkers;
 
-namespace Moony.GalacticDocs.Colorful.Colors
+namespace Moony.GalacticDocs.Colorful.Core
 {
     public class Format
     {
@@ -10,7 +10,7 @@ namespace Moony.GalacticDocs.Colorful.Colors
         /// </summary>
         /// <param name="text">The text to reset the color for.</param>
         /// <returns>The colored text.</returns>
-        public static string Reset(string text)
+        public string Reset(string text)
         {
             return Basics.Initiate(0, 0, "")(text);
         }
@@ -20,7 +20,7 @@ namespace Moony.GalacticDocs.Colorful.Colors
         /// </summary>
         /// <param name="text">The text to bold.</param>
         /// <returns>The colored text.</returns>
-        public static string Bold(string text)
+        public string Bold(string text)
         {
             return Basics.Initiate(1, 22, "\x1b[22m\x1b[1m")(text);
         }
@@ -30,7 +30,7 @@ namespace Moony.GalacticDocs.Colorful.Colors
         /// </summary>
         /// <param name="text">The text to dim.</param>
         /// <returns>The colored text.</returns>
-        public static string Dim(string text)
+        public string Dim(string text)
         {
             return Basics.Initiate(2, 22, "\x1b[22m\x1b[2m")(text);
         }
@@ -40,7 +40,7 @@ namespace Moony.GalacticDocs.Colorful.Colors
         /// </summary>
         /// <param name="text">The text to return italic.</param>
         /// <returns>The colored text.</returns>
-        public static string Italic(string text)
+        public string Italic(string text)
         {
             return Basics.Initiate(3, 23, "")(text);
         }
@@ -50,7 +50,7 @@ namespace Moony.GalacticDocs.Colorful.Colors
         /// </summary>
         /// <param name="text">The text to underline.</param>
         /// <returns>The colored text.</returns>
-        public static string Underline(string text)
+        public string Underline(string text)
         {
             return Basics.Initiate(4, 24, "")(text);
         }
@@ -60,7 +60,7 @@ namespace Moony.GalacticDocs.Colorful.Colors
         /// </summary>
         /// <param name="text">The text to inverse.</param>
         /// <returns>The colored text.</returns>
-        public static string Inverse(string text)
+        public string Inverse(string text)
         {
             return Basics.Initiate(7, 27, "")(text);
         }
@@ -70,7 +70,7 @@ namespace Moony.GalacticDocs.Colorful.Colors
         /// </summary>
         /// <param name="text">The text to hide.</param>
         /// <returns>The colored text.</returns>
-        public static string Hidden(string text)
+        public string Hidden(string text)
         {
             return Basics.Initiate(8, 28, "")(text);
         }
@@ -80,7 +80,7 @@ namespace Moony.GalacticDocs.Colorful.Colors
         /// </summary>
         /// <param name="text">The text to strike through.</param>
         /// <returns>The colored text.</returns>
-        public static string StrikeThrough(string text)
+        public string StrikeThrough(string text)
         {
             return Basics.Initiate(9, 29, "")(text);
         }
